@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alien Capsule Clicker</title>
+  <style>
+    * {
+      margin: 0;
+      background-image: url('./assets/5445590.jpg');
+      background-size: cover;
+      width: 100vh;
+      height: 100vh;
+      padding: 0;
+    }
+
+    #alien-capsule {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 100px;
+      background-image: url('./assets/6D885094-B78B-4AF3-B562-A6EF1CA36871.webp');
+      background-size: cover;
+      cursor: pointer;
+    }
+
+
+.star {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  pointer-events: none;
+  animation: shooting-star 8s ease infinite;
+  animation-direction: normal;
+
+}
+
+.star::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background-size: cover;
+  pointer-events: none;
+}
+/* 
+.star:nth-child(2n)::before {
+  background-image: url('./assets/st_small_507x507-pad_600x600_f8f8f8-removebg-preview\ \(1\).png');
+} */
+
+.elementOne{
+  background-image: url('./assets/st_small_507x507-pad_600x600_f8f8f8-removebg-preview\ \(1\).png');
+}
+
+.star:nth-child(3)::before {
+  background-image: url('./assets/pizza-png-19313.png');
+  height: 40px;
+}
+
+.star:nth-child(4)::before {
+  background-image: url('./assets/crocsjadambre.png');
+  height: 39px;
+}
+
+
+@keyframes shooting-star {
+  100% {
+    transform: translateX(100vh) translateY(100vh);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="alien-capsule" onclick="incrementScore();"></div>
+    <div id="score">0</div>
+  </div>
+  <script>
+    const body = document.getElementById("container");
+    const astérioide = [
+      {
+        name:"crocs",
+        img:"test",
+      }
+      {
+        name:"pizza",
+        img:"",
+      }
+    ]
+    function createStar() {
+      var star = document.createElement('div');
+      star.className = 'star';
+      
+      let y = Math.floor(Math.random() * window.innerHeight);
+      star.style.top = y + 'px';
+      document.body.appendChild(star);
+
+      setTimeout(function() {
+        document.body.removeChild(star);
+      }, 5000);
+    }
+
+    setInterval(createStar,1000);
+
+    function createCrocs(
+      name,
+      img,
+    ){
+      const star = document.createElement("div");
+      star.classList.add("star");
+      body.appendChild(star);
+
+      const img = document.createElement("img");
+      img.classList.add("elementOne");
+      star.appendChild(img);
+    }
+  </script>
+</body>
+</html>

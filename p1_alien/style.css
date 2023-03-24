@@ -1,0 +1,273 @@
+@font-face {
+  font-family: 'Space Age';
+  src: url('SpaceAge.eot');
+  src: url('SpaceAge.eot?#iefix') format('embedded-opentype'),
+    url('SpaceAge.woff2') format('woff2'),
+    url('SpaceAge.woff') format('woff'),
+    url('SpaceAge.ttf') format('truetype'),
+    url('SpaceAge.svg#SpaceAge') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  background-image: url("assets/background.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8%;
+
+}
+
+button {
+  display: flex;
+  height: 45px;
+  width: 45px;
+  border-radius: 3rem;
+  font-size: 200%;
+  align-items: center;
+
+}
+
+
+
+#openBtn {
+  justify-content: center;
+  color: red;
+  font-weight: bolder;
+  background-image: url("assets/earth.avif");
+  background-size: cover;
+  box-shadow:
+    0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34),
+    0 0 12px rgba(108, 242, 30, 0.52),
+    0 0 21px rgba(48, 242, 30, 0.92),
+    0 0 34px rgba(30, 242, 111, 0.78),
+    0 0 54px rgba(30, 242, 178, 0.92);
+}
+
+#closeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  background-image: url("assets/mars.avif");
+  background-size: cover;
+  box-shadow:
+    0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34),
+    0 0 12px rgba(108, 242, 30, 0.52),
+    0 0 21px rgba(48, 242, 30, 0.92),
+    0 0 34px rgba(30, 242, 111, 0.78),
+    0 0 54px rgba(30, 242, 178, 0.92);
+}
+
+dialog {
+  width: 80%;
+  height: 70%;
+  position: absolute;
+  top: 30px;
+  border-radius: 3rem;
+  margin-left: 10%;
+  background-image: url("assets/backpop.jpg");
+  background-size: cover;
+  box-shadow:
+    0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34),
+    0 0 12px rgba(108, 242, 30, 0.52),
+    0 0 21px rgba(48, 242, 30, 0.92),
+    0 0 34px rgba(30, 242, 111, 0.78),
+    0 0 54px rgba(30, 242, 178, 0.92);
+}
+
+h2 {
+  font-weight: bolder;
+  font-family: 'Space Age';
+  color: greenyellow;
+}
+
+p {
+  font-family: 'Space Age';
+  color: greenyellow;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#container1 {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.titre {
+
+  font-family: "Space Age";
+  text-align: center;
+  font-size: 50px;
+  height: 70px;
+  padding-bottom: 15px;
+  color: greenyellow;
+  font-weight: bolder;
+  text-shadow:
+    0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34),
+    0 0 12px rgba(108, 242, 30, 0.52),
+    0 0 21px rgba(48, 242, 30, 0.92),
+    0 0 34px rgba(30, 242, 111, 0.78),
+    0 0 54px rgba(30, 242, 178, 0.92);
+}
+
+.logo {
+  padding-top: 25px;
+}
+
+#nombreClics {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  border: white;
+  height: 45px;
+  border-radius: 3rem;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: yellowgreen;
+  font-weight: bolder;
+
+  text-shadow:
+    0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34),
+    0 0 12px rgba(108, 242, 30, 0.52),
+    0 0 21px rgba(48, 242, 30, 0.92),
+    0 0 34px rgba(30, 242, 111, 0.78),
+    0 0 54px rgba(30, 242, 178, 0.92);
+  box-shadow:
+    0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34),
+    0 0 12px rgba(242, 30, 231, 0.52),
+    0 0 21px rgba(224, 30, 242, 0.92),
+    0 0 34px rgba(242, 30, 207, 0.78),
+    0 0 54px rgba(242, 30, 147, 0.92);
+
+}
+
+
+
+.boutique {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+
+
+}
+
+.box1 {
+  display: flex;
+  align-items: center;
+  border-radius: 1.5rem;
+  width: 33%;
+  color: white;
+
+}
+
+.box2 {
+  display: flex;
+  align-items: center;
+  border-radius: 1.5rem;
+  width: 33%;
+  color: white;
+}
+
+.box3 {
+  display: flex;
+  align-items: center;
+  border-radius: 1.5rem;
+  width: 33%;
+  color: white;
+
+
+}
+
+
+
+#footer {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  bottom: 0;
+  margin-top: auto;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.prenom {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  width: 100%;
+}
+
+.wild {
+  margin-left: 10px;
+}
+
+.anthony {
+  margin-right: 10px;
+}
+
+#alien {
+  display: flex;
+  justify-self: center;
+  margin: auto;
+  height: 300px;
+  width: auto;
+}
+
+#nombreClics {
+font-family: "DS-DIGI";
+}
+

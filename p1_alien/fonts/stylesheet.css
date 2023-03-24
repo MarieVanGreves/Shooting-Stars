@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Space Age';
+    src: url('SpaceAge.eot');
+    src: url('SpaceAge.eot?#iefix') format('embedded-opentype'),
+        url('SpaceAge.woff2') format('woff2'),
+        url('SpaceAge.woff') format('woff'),
+        url('SpaceAge.ttf') format('truetype'),
+        url('SpaceAge.svg#SpaceAge') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
